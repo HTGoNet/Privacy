@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+  
+    <style>
+        body{
+            
+        }
+        .main {
+            padding: 20px;
+            color: #3e3e3e;
+            line-height: 1.8;
+        }
+        .main p{
+            /*word-break: break-all;*/
+            margin-bottom: 20px;
+            text-indent: 20px;
+        }
+
+        .main h3 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+    </style>
+    <script type="text/javascript">
+      var doc = document,
+        win = window,
+        isMobile = is.mobile(),
+        isAndroid = isMobile && is.android(),
+        isIos = isMobile && !isAndroid && is.ios(),
+        isTablet = !isMobile && is.tablet(),
+        isWechat = (isMobile || isTablet) && navigator.userAgent.toLowerCase().match(/MicroMessenger/i) === "micromessenger",
+        isDesktop = !isMobile && !isTablet && is.desktop(),
+        isPortrait = win.orientation === 90 || win.orientation === -90,
+        isLandscape = (win.orientation === 180 || win.orientation === 0) || !win.orientation,
+        isIPSE = isIos && (screen.height === 568 && screen.width === 320),
+        isIP8 = isIos && (screen.height === 667 && screen.width === 375),
+        isIP8P = isIos && (screen.height === 736 && screen.width === 414),
+        isIPX = isIos && (screen.height === 812 && screen.width === 375)
+      if (isMobile && isPortrait) {
+        var viewportContent = 'width=device-width';
+        doc.getElementById('viewport').setAttribute('content', viewportContent);
+      }
+
+    </script>
+    <link rel="stylesheet" href="yf.css">
+</head>
+
+<body class="zhcn" lang="zhcn">
+
+<script type="text/javascript">
+  doc.body.className += ' ' + (isMobile ? 'mobile' : isTablet ? 'tablet' : isDesktop ? 'desktop' : 'unknow');
+  doc.body.className += ' ' + (isAndroid ? 'android' : isIos ? 'ios' : '');
+  doc.body.className += ' ' + (isWechat ? 'wechat' : '');
+  doc.body.className += ' ' + (isPortrait ? 'portrait' : 'landscape');
+  doc.body.className += ' ' + (isIPSE ? 'iphoneSE' : '');
+  doc.body.className += ' ' + (isIP8 ? 'iphone8' : '');
+  doc.body.className += ' ' + (isIP8P ? 'iphone8P' : '');
+  doc.body.className += ' ' + (isIPX ? 'iphoneX' : '');
+</script>
+
+
+<div class="body-container main">
+
+    <h3>Terms of Service</h3>
+
+    <p>Thank you for using our products and services.</p>
+    <p>By using our services, you agree to the terms. Please read carefully.</p>
+    <h3>Use service</h3>
+    <p>You must comply with all policies provided in the Service.</p>
+    <p>Please do not abuse our services. For example, do not interfere with our services or attempt to access them using methods other than those provided by us. You may only use our services to the extent permitted by law, including applicable export and re-export control laws and regulations. If you do not comply with our terms or policies, or if we are investigating suspected misconduct, we may suspend or stop providing services to you.</p>
+    <p>Use of our services does not give you any intellectual property rights in our services or the content you access. You may not use any of the Services unless you are licensed by the relevant content owner or otherwise licensed by law. This article does not grant you the right to use any trademarks or logos used in our services. Do not delete, hide or change any legal notices displayed on our services or displayed with the Services.</p>
+	<p>Our service shows content that is not part of Google. These contents are the sole responsibility of the entity being released. We may review the content to determine whether it is illegal or violates our policies; if we have reason to believe that the content violates our policies or is illegal, we may remove or refuse to display it. However, this does not mean that we will inevitably review the content, so please do not assume that we are reviewing.</p>
+	<p>We may send you service announcements, management messages, and other information as you use the service. You may choose not to receive some of the above information.</p>
+</div>
+</body>
+
+</html>
